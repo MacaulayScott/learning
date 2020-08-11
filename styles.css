@@ -1,0 +1,308 @@
+@import url("//hello.myfonts.net/count/3a5559");
+@font-face {
+    font-family: "Motiraw";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Motiraw_alt_normal.woff2") format("woff2"), 
+        url("/fonts/Motiraw_alt_normal.woff") format("woff");
+}
+@font-face {
+    font-family: "Motiraw";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Motiraw_alt_bold.woff2") format("woff2"), 
+        url("/fonts/Motiraw_alt_bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Motiraw";
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    src: url("/fonts/3A5559_0_0.eot");
+    src: url("/fonts/3A5559_0_0.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/3A5559_0_0.woff2") format("woff2"), 
+        url("/fonts/3A5559_0_0.woff") format("woff"),
+        url("/fonts/3A5559_0_0.ttf") format("truetype"), 
+        url("/fonts/3A5559_0_0.svg#wf") format("svg");
+}
+@font-face {
+    font-family: "Motiraw";
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    src: url("/fonts/3A5559_1_0.eot");
+    src: url("/fonts/3A5559_1_0.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/3A5559_1_0.woff2") format("woff2"),
+        url("/fonts/3A5559_1_0.woff") format("woff"),
+        url("/fonts/3A5559_1_0.ttf") format("truetype"),
+        url("/fonts/3A5559_1_0.svg#wf") format("svg");
+}
+
+
+
+
+
+
+
+body {
+    margin: 10px;
+    background: rgb(53, 49, 49);
+    font-family:"Motiraw", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #55d6aa;
+    
+}
+
+.center {
+    text-align: center;
+    background-color: #55d6aa;
+}
+
+header {
+    background: #55d6aa;
+    margin: 0;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav {
+    float: right;
+    padding-top: 0px;
+}
+
+.small {
+    height: 50px;
+    width: 60px;
+    float: left;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 55px;
+    padding-top: 20px;
+    font-family: 'Motiraw', sans-serif;
+
+    position: relative;
+
+}
+
+nav a {
+    color: #444444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover {
+    color:white;
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: ease-in 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:visited {
+    background-color: red;
+}
+
+.tcontainer {
+    width: 100%;
+    overflow: hidden; /* Hide scroll bar */
+    
+    
+  }
+   
+  /* MIDDLE CONTAINER */
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%; /* Push contents to right side of screen */
+    background-color: #55d6aa;
+    
+  }
+  
+  /* INNER CONTAINER */
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 17s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; /* Pause scroll on mouse hover */
+  }
+  
+  /* ITEMS */
+  .ticker-item{
+    display: inline-block; /* Lay items in a horizontal line */
+    padding: 0 1rem;
+  }
+
+.text-white{
+    color: white;
+}
+
+img{
+    display: block;
+    margin: auto 0;
+    
+    
+}
+
+.float-right{
+    float: right;
+       
+}
+
+.blue-border{
+    border-radius: 2px;
+    margin-right: 20px;
+    border-color: #55d6aa;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.blue-border:last-child{
+    margin-bottom: 0em;
+}
+
+.width100{
+    width: 100px;
+}
+
+.image-small{
+    height: 200px;
+    width: auto;
+}
+
+td, th{
+    border-width: 2px;
+    border-style: groove;
+    padding: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: #55d6aa;
+}
+
+video{
+    float: right;
+    margin-right: 100px;
+    margin-top: 0em;
+    
+}
+
+p{
+    width: 35%;
+    font-family: 'Motiraw', sans-serif;
+    font-size: large;
+    margin: 5px;
+    
+}
+
+hr{
+    background-color: #55d6aa;
+    height: 3px;
+    width: 100%;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.top-margin{
+    margin: 5px 0;
+}
+
+.float-left{
+    float: left;
+}
+
+div p {
+    margin: 5px;
+}
+
+#cascade { 
+    margin: auto;
+}
+
+#specific{
+    margin: auto;
+}
+
+u{
+    border-bottom: #55d6aa solid 2px;
+}
+
+#inher{
+    margin: auto;
+}
+
+dl{
+    width: 40%;
+}
+
+.middle{
+    position: relative;
+    width: 60%;
+    float: right;
+}
+
+.display-table{
+    display: table;
+    
+
+}
+
+.display-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+
